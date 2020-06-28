@@ -1,0 +1,485 @@
+<html lang="en"><head><meta charset="UTF-8" /><title>Bott Poker - PHP Development Kit</title><meta name="theme-color" content="#FFFFFF" /><meta name="description" content="Bott Poker" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><style>body { background-color:#fff;font-family:'Open Sans', sans-serif;}.st{text-align:center;color:#efefef;font-size:0.9em;width:90%;margin:0 auto;max-width:768px;padding:1em 0 1em 0;}h1{margin:0;font-size:4em;letter-spacing:-0.1em;}h3{color:yellow;margin:0;font-weight:lighter;text-transform:uppercase;font-size:0.9em;letter-spacing:0.02em;}</style><link rel="icon" href="https://bottpoker.com/media/images/fav.ico"  rel="shortcut icon"  type="image/x-icon" /></head><body>
+<a href="https://github.com/bottpoker/PHP-Poker-Bot" target="_blank" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+<div style="max-width:1200px;margin:0 auto;padding:1em;"><img src="https://bottpoker.com/media/images/logo-1200.png" width="100%" height="auto" /></div>
+
+<div style="text-align:center;padding:2em;max-width:900px;margin:2em auto 2em auto">
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Name</th>
+    <th class="tg-0pky">Endpoint</th>
+    <th class="tg-0pky">Filename</th>
+    <th class="tg-0pky">Size</th>
+  </tr>
+</thead>
+<tbody>
+
+
+
+ <tr>
+    <td class="tg-0pky">System &raquo; Endpoints</td>
+    <td class="tg-0pky">system/endpoints</td>
+    <td class="tg-0pky"><a href="./system-endpoints.php">system-endpoints.php</a></td>
+    <td class="tg-0pky">1.1kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">System &raquo; List Announcements</td>
+    <td class="tg-0pky">system/list-announcements</td>
+    <td class="tg-0pky"><a href="./system-list-announcements.php">system-list-announcements.php</a></td>
+    <td class="tg-0pky">1.14kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">System &raquo; Ping</td>
+    <td class="tg-0pky">system/ping</td>
+    <td class="tg-0pky"><a href="./system-ping.php">system-ping.php</a></td>
+    <td class="tg-0pky">1.04kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">System &raquo; Status</td>
+    <td class="tg-0pky">system/status</td>
+    <td class="tg-0pky"><a href="./system-status.php">system-status.php</a></td>
+    <td class="tg-0pky">1.06kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">System &raquo; Timestamp</td>
+    <td class="tg-0pky">system/timestamp</td>
+    <td class="tg-0pky"><a href="./system-timestamp.php">system-timestamp.php</a></td>
+    <td class="tg-0pky">1.09kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Tests &raquo; Deal Community Cards</td>
+    <td class="tg-0pky">tests/deal-community-cards</td>
+    <td class="tg-0pky"><a href="./tests-deal-community-cards.php">tests-deal-community-cards.php</a></td>
+    <td class="tg-0pky">1.39kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Tests &raquo; Deal Pockets</td>
+    <td class="tg-0pky">tests/deal-pockets</td>
+    <td class="tg-0pky"><a href="./tests-deal-pockets.php">tests-deal-pockets.php</a></td>
+    <td class="tg-0pky">1.23kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Bot &raquo; Bot Debug Log</td>
+    <td class="tg-0pky">bot/debug-log</td>
+    <td class="tg-0pky"><a href="./bot-debug-log.php">bot-debug-log.php</a></td>
+    <td class="tg-0pky">1.24kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Bot &raquo; Delete Bot</td>
+    <td class="tg-0pky">bot/delete-bot</td>
+    <td class="tg-0pky"><a href="./bot-delete-bot.php">bot-delete-bot.php</a></td>
+    <td class="tg-0pky">1.05kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Bot &raquo; List Bot Profit and Loss (PNL)</td>
+    <td class="tg-0pky">bot/list-bot-profitloss</td>
+    <td class="tg-0pky"><a href="./bot-list-bot-profitloss.php">bot-list-bot-profitloss.php</a></td>
+    <td class="tg-0pky">1.2kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Bot &raquo; List My Bots</td>
+    <td class="tg-0pky">bot/list-my-bots</td>
+    <td class="tg-0pky"><a href="./bot-list-my-bots.php">bot-list-my-bots.php</a></td>
+    <td class="tg-0pky">1.19kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Bot &raquo; Register Bot</td>
+    <td class="tg-0pky">bot/register-bot</td>
+    <td class="tg-0pky"><a href="./bot-register-bot.php">bot-register-bot.php</a></td>
+    <td class="tg-0pky">1.94kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Deposit &raquo; Deposit List</td>
+    <td class="tg-0pky">deposit/list</td>
+    <td class="tg-0pky"><a href="./deposit-list.php">deposit-list.php</a></td>
+    <td class="tg-0pky">1.1kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Deposit &raquo; Request Deposit Address</td>
+    <td class="tg-0pky">deposit/request-deposit-address</td>
+    <td class="tg-0pky"><a href="./deposit-request-deposit-address.php">deposit-request-deposit-address.php</a></td>
+    <td class="tg-0pky">1.3kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Game Create Ring Game</td>
+    <td class="tg-0pky">game/create-ring-game</td>
+    <td class="tg-0pky"><a href="./game-create-ring-game.php">game-create-ring-game.php</a></td>
+    <td class="tg-0pky">1.18kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Game Create Tournament</td>
+    <td class="tg-0pky">game/create-tournament</td>
+    <td class="tg-0pky"><a href="./game-create-tournament.php">game-create-tournament.php</a></td>
+    <td class="tg-0pky">1.36kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Join Game</td>
+    <td class="tg-0pky">game/join</td>
+    <td class="tg-0pky"><a href="./game-join.php">game-join.php</a></td>
+    <td class="tg-0pky">2.01kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Leave Game</td>
+    <td class="tg-0pky">game/leave</td>
+    <td class="tg-0pky"><a href="./game-leave.php">game-leave.php</a></td>
+    <td class="tg-0pky">1.43kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; List Game Player Actions</td>
+    <td class="tg-0pky">game/list-game-player-actions</td>
+    <td class="tg-0pky"><a href="./game-list-game-player-actions.php">game-list-game-player-actions.php</a></td>
+    <td class="tg-0pky">1.27kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; List Previous Hands</td>
+    <td class="tg-0pky">game/list-previous-hands</td>
+    <td class="tg-0pky"><a href="./game-list-previous-hands.php">game-list-previous-hands.php</a></td>
+    <td class="tg-0pky">1.19kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; List Table Players</td>
+    <td class="tg-0pky">game/list-table-players</td>
+    <td class="tg-0pky"><a href="./game-list-table-players.php">game-list-table-players.php</a></td>
+    <td class="tg-0pky">1.18kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Payout Table</td>
+    <td class="tg-0pky">game/payout-table</td>
+    <td class="tg-0pky"><a href="./game-payout-table.php">game-payout-table.php</a></td>
+    <td class="tg-0pky">1.13kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Real-time Game Data</td>
+    <td class="tg-0pky">game/realtime</td>
+    <td class="tg-0pky"><a href="./game-realtime.php">game-realtime.php</a></td>
+    <td class="tg-0pky">1.3kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Sit In</td>
+    <td class="tg-0pky">game/actions/sit-in</td>
+    <td class="tg-0pky"><a href="./game-actions-sit-in.php">game-actions-sit-in.php</a></td>
+    <td class="tg-0pky">1.19kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Sit Out</td>
+    <td class="tg-0pky">game/actions/sit-out</td>
+    <td class="tg-0pky"><a href="./game-actions-sit-out.php">game-actions-sit-out.php</a></td>
+    <td class="tg-0pky">1.24kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Public &raquo; List Collusions</td>
+    <td class="tg-0pky">public/collusion-list</td>
+    <td class="tg-0pky"><a href="./public-collusion-list.php">public-collusion-list.php</a></td>
+    <td class="tg-0pky">1.22kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Public &raquo; List Collusion Refunds</td>
+    <td class="tg-0pky">public/collusion-refunds</td>
+    <td class="tg-0pky"><a href="./public-collusion-refunds.php">public-collusion-refunds.php</a></td>
+    <td class="tg-0pky">1.22kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Public &raquo; Leaderboards</td>
+    <td class="tg-0pky">public/leaderboards</td>
+    <td class="tg-0pky"><a href="./public-leaderboards.php">public-leaderboards.php</a></td>
+    <td class="tg-0pky">1.19kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Public &raquo; List Ring Games</td>
+    <td class="tg-0pky">public/poker/list-ring-games</td>
+    <td class="tg-0pky"><a href="./public-poker-list-ring-games.php">public-poker-list-ring-games.php</a></td>
+    <td class="tg-0pky">1.19kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Public &raquo; List Sit and Go Games</td>
+    <td class="tg-0pky">public/poker/list-sitandgo-games</td>
+    <td class="tg-0pky"><a href="./public-poker-list-sitandgo-games.php">public-poker-list-sitandgo-games.php</a></td>
+    <td class="tg-0pky">1.22kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Public &raquo; List Tournament Games</td>
+    <td class="tg-0pky">public/poker/list-tournament-games</td>
+    <td class="tg-0pky"><a href="./public-poker-list-tournament-games.php">public-poker-list-tournament-games.php</a></td>
+    <td class="tg-0pky">1.24kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">System &raquo; System Version</td>
+    <td class="tg-0pky">system/version</td>
+    <td class="tg-0pky"><a href="./system-version.php">system-version.php</a></td>
+    <td class="tg-0pky">1.08kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">User &raquo; User Access History</td>
+    <td class="tg-0pky">user/access-history</td>
+    <td class="tg-0pky"><a href="./user-access-history.php">user-access-history.php</a></td>
+    <td class="tg-0pky">1.13kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">User &raquo; User Active Sessions</td>
+    <td class="tg-0pky">user/active-sessions</td>
+    <td class="tg-0pky"><a href="./user-active-sessions.php">user-active-sessions.php</a></td>
+    <td class="tg-0pky">1.14kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">User &raquo; User API Limits</td>
+    <td class="tg-0pky">user/api-limits</td>
+    <td class="tg-0pky"><a href="./user-api-limits.php">user-api-limits.php</a></td>
+    <td class="tg-0pky">1.07kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">User &raquo; Game History</td>
+    <td class="tg-0pky">user/game-history</td>
+    <td class="tg-0pky"><a href="./user-game-history.php">user-game-history.php</a></td>
+    <td class="tg-0pky">1.19kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">User &raquo; List Violations</td>
+    <td class="tg-0pky">user/list-violations</td>
+    <td class="tg-0pky"><a href="./user-list-violations.php">user-list-violations.php</a></td>
+    <td class="tg-0pky">1.22kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Withdraw &raquo; Withdraw List</td>
+    <td class="tg-0pky">withdraw/list</td>
+    <td class="tg-0pky"><a href="./withdraw-list.php">withdraw-list.php</a></td>
+    <td class="tg-0pky">1.12kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Withdraw &raquo; Request Withdraw</td>
+    <td class="tg-0pky">withdraw/request-withdraw</td>
+    <td class="tg-0pky"><a href="./withdraw-request-withdraw.php">withdraw-request-withdraw.php</a></td>
+    <td class="tg-0pky">1.3kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Bet</td>
+    <td class="tg-0pky">game/actions/bet</td>
+    <td class="tg-0pky"><a href="./game-actions-bet.php">game-actions-bet.php</a></td>
+    <td class="tg-0pky">1.09kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Call</td>
+    <td class="tg-0pky">game/actions/call</td>
+    <td class="tg-0pky"><a href="./game-actions-call.php">game-actions-call.php</a></td>
+    <td class="tg-0pky">1.12kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Fold</td>
+    <td class="tg-0pky">game/actions/fold</td>
+    <td class="tg-0pky"><a href="./game-actions-fold.php">game-actions-fold.php</a></td>
+    <td class="tg-0pky">1.18kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Post Blind</td>
+    <td class="tg-0pky">game/actions/post-blind</td>
+    <td class="tg-0pky"><a href="./game-actions-post-blind.php">game-actions-post-blind.php</a></td>
+    <td class="tg-0pky">1.31kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Raise</td>
+    <td class="tg-0pky">game/actions/raise</td>
+    <td class="tg-0pky"><a href="./game-actions-raise.php">game-actions-raise.php</a></td>
+    <td class="tg-0pky">1.27kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; Game Actions</td>
+    <td class="tg-0pky">game/actions/top-up</td>
+    <td class="tg-0pky"><a href="./game-actions-top-up.php">game-actions-top-up.php</a></td>
+    <td class="tg-0pky">1.17kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Game &raquo; All-in</td>
+    <td class="tg-0pky">game/actions/allin</td>
+    <td class="tg-0pky"><a href="./game-actions-allin.php">game-actions-allin.php</a></td>
+    <td class="tg-0pky">1.18kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Public &raquo; List Equity Pools</td>
+    <td class="tg-0pky">public/list-equity-pools</td>
+    <td class="tg-0pky"><a href="./public-list-equity-pools.php">public-list-equity-pools.php</a></td>
+    <td class="tg-0pky">1.11kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Public &raquo; Network Playing Statistics</td>
+    <td class="tg-0pky">public/network-playing-statistics</td>
+    <td class="tg-0pky"><a href="./public-network-playing-statistics.php">public-network-playing-statistics.php</a></td>
+    <td class="tg-0pky">1.23kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Tests &raquo; Tests Deal Full Details</td>
+    <td class="tg-0pky">tests/deal-full-details</td>
+    <td class="tg-0pky"><a href="./tests-deal-full-details.php">tests-deal-full-details.php</a></td>
+    <td class="tg-0pky">1.21kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">User &raquo; User List Rakebacks</td>
+    <td class="tg-0pky">user/list-rakebacks</td>
+    <td class="tg-0pky"><a href="./user-list-rakebacks.php">user-list-rakebacks.php</a></td>
+    <td class="tg-0pky">1.18kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">User &raquo; User List Rakes Paid</td>
+    <td class="tg-0pky">user/list-rakes-paid</td>
+    <td class="tg-0pky"><a href="./user-list-rakes-paid.php">user-list-rakes-paid.php</a></td>
+    <td class="tg-0pky">1.12kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">User &raquo; User Rakeback Level</td>
+    <td class="tg-0pky">user/rakeback-level</td>
+    <td class="tg-0pky"><a href="./user-rakeback-level.php">user-rakeback-level.php</a></td>
+    <td class="tg-0pky">1.15kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Public &raquo; Game Round Speeds</td>
+    <td class="tg-0pky">public/game-round-speeds</td>
+    <td class="tg-0pky"><a href="./public-game-round-speeds.php">public-game-round-speeds.php</a></td>
+    <td class="tg-0pky">1.17kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Public &raquo; Game Speeds</td>
+    <td class="tg-0pky">public/game-speeds</td>
+    <td class="tg-0pky"><a href="./public-game-speeds.php">public-game-speeds.php</a></td>
+    <td class="tg-0pky">1.09kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">Public &raquo; Public Game Types</td>
+    <td class="tg-0pky">public/game-types</td>
+    <td class="tg-0pky"><a href="./public-game-types.php">public-game-types.php</a></td>
+    <td class="tg-0pky">1.08kb</td>
+  </tr>
+  
+
+ <tr>
+    <td class="tg-0pky">User &raquo; Active Bots</td>
+    <td class="tg-0pky">user/active-bots</td>
+    <td class="tg-0pky"><a href="./user-active-bots.php">user-active-bots.php</a></td>
+    <td class="tg-0pky">1.14kb</td>
+  </tr>
+  
+
+</tbody>
+</table>
+
+
+<br><br>
+Last updated 28th June 2020 (c) MIT License
+</div>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"></body></html>

@@ -8,6 +8,9 @@ If you are interested in programming for the current closed beta then visit [bot
 ### Poker Bot Documentation
 The full REST API documentation can be found [here](https://github.com/bottpoker/API-Version-1).
 
+### Building Poker Bots
+We are currently releasing additional `poker_bots` for inclusion into this PHP poker bot kit. The intention of these bots is to provide a building block for developers to take to the next level and then deploy on the network.
+
 ### LIMITATIONS
 There are several limitations that you should be aware of regarding the topic of `collusions` and `code of conduct`. The following table provides a list of important files that contain important information:
 
